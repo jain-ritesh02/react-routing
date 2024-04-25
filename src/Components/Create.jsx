@@ -2,16 +2,14 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Create = () => {
-
   const navigate = useNavigate()
-  const submitHandler = () => {
-    navigate("/About") 
-  }
-  
-  return (
-    <div style={{padding: "2vw" }}>
 
-      <button onClick={submitHandler} style={{padding: "1vw 1.5vw", borderRadius: "10px" , cursor: "pointer" , backgroundColor: "green" , border: "none", color: "white"}}>Submit</button>
+  return (
+    <div style={{padding: "1vw 15vw"}}>
+      <h2 style={{color: "red", }}>Create Page</h2>
+      <p style={{width: "40%"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat id laudantium voluptates eveniet? Possimus nobis laboriosam qui optio porro adipisci!</p>
+      <button onClick={() => navigate(-1)} style={{padding: "1vw", borderRadius: "10px" , cursor: "pointer" , backgroundColor: "blue" , border: "none", color: "white", marginRight: "1vw"}}>Home </button>
+      <button onClick={() => navigate("../About")} style={{padding: "1vw", borderRadius: "10px" , cursor: "pointer" , backgroundColor: "blue" , border: "none", color: "white"}}>About </button>
     </div>
   )
 }

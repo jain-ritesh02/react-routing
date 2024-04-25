@@ -12,7 +12,7 @@ const Details = () => {
         Profile
         </Link>
       <p>Book Id: <b>{id}</b></p>
-      <button onClick={()=> navigate(-1)} style={{padding: "1vw 2vw", backgroundColor: "red", color: "white", border: "none", borderRadius: "10px"}}>Go Back</button>
+      <button onClick={()=> navigate(-1)} style={{padding: "1vw", backgroundColor: "red", color: "white", border: "none", borderRadius: "10px"}}>Go Back</button>
     </div>
   )
 }
