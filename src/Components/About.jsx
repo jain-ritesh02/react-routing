@@ -6,7 +6,7 @@ const About = () => {
   return (
 
     <div style={{padding: "1vw 15vw"}}>
-      <div style={{display: "flex", alignItems: "center", gap: "45vw"}}>
+      <div style={{display: "flex", alignItems: "center", gap: "50vw"}}>
       <h1 style={{color: "red"}}>About Page</h1>
       <button onClick={() => navigate("/")} style={{padding: "1vw", borderRadius: "10px" , cursor: "pointer" , backgroundColor: "green" , border: "none", color: "white"}}>Home</button>
       </div>
